@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bar Graph</title>
+    <meta charset="utf-8">    
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" href="Assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+
+<body style="background:#f0f0f0">
+    <div class="container" style="background:white">
+        <div class="row">
+            <div class="col-md-12" style="margin:0px;box-shadow:0px 0px 10px 0px #888888;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <img src="static/images/VTULogo.png" width= "1200px" alt="VTU Logo" class="img-responsive">
+                        </div>
+                        <div class="row">
+                            <nav class="navbar navbar-inverse" style="border-radius:0px;margin-bottom:0px;">
+                                <h2 align="center" style="color: white">STUDENT STATISTICS</h2>
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-left">
+                                            <li class="nav-item">
+                                                <a href="/download" download="report.html"><button onclick="downloadReport()" type="button" style="color: black">DOWNLOAD REPORT</button></a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div> 
+                                </div> 
+                            </nav>
+                        </div> 
+                        <div class="row" style="margin-bottom:1em;">
+                            <div class="col-md-12" style="background-color:#EE833587;padding:4px;">
+                                <marquee scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+                                    <span class="badge badge-success">!!!</span> <b style="color:#5a1fa9;">DATABASE MANAGEMENT SYSTEMS MINI PROJECT GOVERNMENT ENGINEERING COLLEGE RAMANAGARA</b>&nbsp;&nbsp;
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>	
+    <h1>Statistics</h1>
+    <p>Total Students: {{ total_students }}</p>
+    <h2>Gender Distribution</h2>
+    <ul>
+        {% for gender, count in gender_distribution %}
+            <li>{{ gender }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+
+
+    <canvas id="barGraph1" width="300" height="100"></canvas>
+    <script>
+        // Data for the bar graph
+        var data = {
+            labels: ['FEMALE','MALE' ],
+            datasets: [{
+                label: ['GENDER DISTRIBUTION'],
+                data: [355,437],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                ],
+                borderWidth: 1
+            }]
+        };
+    
+        // Options for the bar graph
+        var options = {
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        };
+    
+        // Get the canvas element
+        var ctx = document.getElementById('barGraph1').getContext('2d');
+    
+        // Create the bar graph
+        var barGraph = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+<h2>Branch Distribution</h2>
+<ul>
+    {% for Branch, count in Branch_distribution %}
+        <li>{{ Branch }}: {{ count }}</li>
+    {% endfor %}
+</ul>
+    <canvas id="barGraph" width="300" height="100"></canvas>
+    <script>
+        // Data for the bar graph
+        var data = {
+            labels: ['CSE', 'CV','ECE', 'MSM'],
+            datasets: [{
+                label: ['BRANCH DISTRIBUTION'],
+                data: [261,177,240,114],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(255, 206, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+    
+        // Options for the bar graph
+        var options = {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        };
+    
+        // Get the canvas element
+        var ctx = document.getElementById('barGraph').getContext('2d');
+    
+        // Create the bar graph
+        var barGraph = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+    <script>
+        function downloadReport() {
+            // Get the content of the current page
+            var htmlContent = document.documentElement.outerHTML;
+    
+            // Create a Blob object from the HTML content
+            var blob = new Blob([htmlContent], { type: 'txt,html' });
+    
+            // Create a temporary anchor element
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+    
+            // Set the file name
+            a.download = 'report.html';
+    
+            // Append the anchor element to the document body
+            document.body.appendChild(a);
+    
+            // Trigger a click event on the anchor element
+            a.click();
+    
+            // Remove the anchor element from the document body
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>

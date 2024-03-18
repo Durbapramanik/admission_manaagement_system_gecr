@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>VTU Examination Portal</title>
+		<meta charset="utf-8">    
+		<meta name="google" content="notranslate" />
+		<link rel="shortcut icon" href="Assets/images/favicon.ico" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+		<script src="Assets/js/jquery.min.js" type="text/javascript"></script>
+		<script src="Assets/js/bootstrap.min.js" type="text/javascript"></script>
+	</head>
+	<body style="background:#f0f0f0">
+		<div class="container" style="background:white">
+			<div class="row">
+				<div class="col-md-12" style="margin:0px;box-shadow:0px 0px 10px 0px #888888;">
+					<div class="row">
+						<div class="container">
+							<div class="row">
+								<img src="Assets/images/VTULogo.png" alt="VTU Logo" class="img-responsive">
+							</div>
+							<div class="row">
+								<nav class="navbar navbar-inverse" style="border-radius:0px;margin-bottom:0px;">
+									<a class="navbar-brand" href="index.php">VTU Prexam</a>
+									<div class="container-fluid">
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+										<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-left">
+												<li class="nav-item">
+													<a class="nav-link" href="https://prexam.vtu.ac.in/coc/index.php" target="_blank"><b>Change of College</b>&nbsp;&nbsp;<span class="label label-warning">New</span></a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="https://faculty.vtu.ac.in/faculty/faculty_college/index.php" target="_blank"><b>Student WhatsApp Registration</b></a>
+												</li>
+												<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>Faculty&nbsp;<span class="caret"></b></span></a>
+													<ul class="dropdown-menu inverse">
+														<li class="nav-item">
+															<a class="nav-link" href="https://faculty.vtu.ac.in/" target="_blank"><b>Registration</b></a>
+														</li>
+														<li role="separator" class="divider"></li>
+														<li class="nav-item">
+															<a class="nav-link" href="https://report.vtu.ac.in/FacultyReport/" target="_blank"><b>Practical Order</b></a>
+														</li>
+														<li role="separator" class="divider"></li>
+														<li class="nav-item">
+															<a class="nav-link" href="https://report.vtu.ac.in/FacultyReport/" target="_blank"><b>Valuation Order</b></a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" href="https://report.vtu.ac.in/HonorsRegistration/" target="_blank"><b>Honors Registration</b></a>
+															<!--<a class="nav-link" href="https://prexam.vtu.ac.in/NVS/" target="_blank"><b>Name Verification System&nbsp;&nbsp;<span class="badge badge-success">New</span></b></a>-->
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" href="https://prexam.vtu.ac.in/NVS/" target="_blank"><b>Name Verification System</b></a>
+														</li>
+													</ul>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="https://eddts.vtu.ac.in" target="_blank"><b>Online Documents</b></a>
+												</li>
+												<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>Others&nbsp;<span class="caret"></b></span></a>
+													<ul class="dropdown-menu inverse">
+														<li class="nav-item">
+															<a class="nav-link" href="https://admissions.vtu.ac.in/HigherSemester/" target="_blank"><b>Student Registration</b></a>
+														</li>
+														<li role="separator" class="divider"></li>
+														<li class="nav-item">
+															<a class="nav-link" href="https://report.vtu.ac.in/ActivityPoints/" target="_blank"><b>Activity Points</b>&nbsp;&nbsp;<span class="label label-warning">New</span></a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div> 
+									</div> 
+								</nav>
+							</div> 
+							<div class="row" style="margin-bottom:1em;">
+								<div class="col-md-12" style="background-color:#EE833587;padding:4px;">
+									<marquee scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+										<span class="badge badge-success">!!!</span> <b style="color:#5a1fa9;">	All the colleges are requested to update the principal details in faculty portal for various upcoming Examination purpose at the earliest.</b>&nbsp;&nbsp;
+									</marquee>
+								</div>
+							</div>
+						</div>
+					</div>		
+					<!--<div class="row">
+						<div class="col-md-12">
+						<h3 style="color:red" class="text-center"><b>Due to maintenance work the IT enabled service may be interrupted on 20/10/2022, <br/>sorry for the inconvenience.</b></h3>
+						</div>
+					</div>-->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-5">
+								<div class="col-md-12 alert alert-warning">
+									<ul style="line-height:2em;">
+										<li><a class="nav-link" href="VTUPrexamSJSEJan24/" style="text-decoration:none;font-size:18px;color:darkgreen;" target="_blank"><b>Silver Jubilee Examination Jan 2024</b>&nbsp;&nbsp;<span class="label label-warning">New</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Dec / Jan Examination 2024 -->
+						<div class="col-md-12">
+							<div class="panel panel-info" style="box-shadow:0px 0px 20px #dff0d8;">
+								<div class="panel-heading">
+									<h2 class="panel-title" style="font-size:16px;"><b>Dec / Jan 2024 Examination ( B.E / B.Tech / B.Arch / B.Plan / B.Sc.(Hons) / PG Diploma in IIISM )</b></h2>
+								</div>
+								<div class="panel-body" style="margin-bottom:5px;padding-bottom:0px;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b>Student</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<!-- <li class=""><a class="nav-link" href="https://prexamblr.vtu.ac.in/Revaluation/VTURevalJuneJuly2023/Student/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Verify Reval Application</b></a></li> -->
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b>Department</b></h3>
+													</div>
+													<div class="panel-body"> 
+														<ul style="line-height:2em;">
+															<!-- <li class=""><a class="nav-link" href="https://prexamblr.vtu.ac.in/Revaluation/VTURevalJuneJuly2023/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Reval Application</b></a></li> -->
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJanFebMarch24/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Shortage of Attendance</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJanFebMarch24/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Examination Application</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b> Principal</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJanFebMarch24/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Form A</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJanFebMarch24/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Appearing List</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJanFebMarch24/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Admission Ticket</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Dec / Jan Examination 2023 -->
+						
+						<!-- Ph.D. Course Work Examination 2024 -->
+						<div class="col-md-12">
+							<div class="panel panel-info" style="box-shadow:0px 0px 20px #dff0d8;">
+								<div class="panel-heading">
+									<h2 class="panel-title" style="font-size:16px;"><b>Ph.D. Course Work Examination Application of January 2024</b></h2>
+								</div>
+								<div class="panel-body" style="margin-bottom:5px;padding-bottom:0px;">
+									<div class="row">
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b>Research Centre</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<li class=""><a class="nav-link" href="https://jnanashodha.vtu.ac.in/PHDCourseWork/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Exam Application</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!--<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+												<div class="panel-heading">
+												<h3 class="panel-title" style="font-size:14px;"><b>Examination Centre</b></h3>
+												</div>
+												<div class="panel-body">
+												<ul style="line-height:2em;">
+												<li class=""><a class="nav-link" href="#" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Form A&nbsp;&nbsp;<span class="badge badge-success">New</span></b></a></li>
+												<li class=""><a class="nav-link" href="#" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Appearing List</b></a></li>
+												</ul>
+												</div>
+												</div>
+											</div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ph.D. Course Work Examination 2024 -->
+						
+						<!-- May / June / July  2023 Examination -->
+						<div class="col-md-12">
+							<div class="panel panel-info" style="box-shadow:0px 0px 20px #dff0d8;">
+								<div class="panel-heading">
+									<h2 class="panel-title" style="font-size:16px;"><b>May/June/July 2023 Examination</b></h2>
+								</div>
+								<div class="panel-body" style="margin-bottom:5px;padding-bottom:0px;">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b>Student</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<li class=""><a class="nav-link" href="https://prexamblr.vtu.ac.in/Revaluation/VTURevalJuneJuly2023/Student/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Verify Reval Application</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b>Department</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<li class=""><a class="nav-link" href="https://prexamblr.vtu.ac.in/Revaluation/VTURevalJuneJuly2023/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Reval Application</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJuneJuly23/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Shortage of Attendance</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJuneJuly23/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Examination Application</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b> Principal</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJuneJuly23/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Form A</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJuneJuly23/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Appearing List</b></a></li>
+															<li class=""><a class="nav-link" href="https://prexam.vtu.ac.in/VTUPrexamJuneJuly23/" style="text-decoration:none;font-size:16px;color:darkgreen;" target="_blank"><b>Admission Ticket</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- May / June / July Examination 2023 -->
+						
+						<!-- December 2022 / January 2023 Examination -->	
+						<div class="col-md-12">
+							<div class="panel panel-info" style="box-shadow:0px 0px 20px #dff0d8;">
+								<div class="panel-heading">
+									<h2 class="panel-title" style="font-size:16px;"><b>December 2022 / January 2023 Examination</b></h2>
+								</div>
+								<div class="panel-body" style="margin-bottom:5px;padding-bottom:0px;">
+									<div class="row">
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="col-md-4">
+												<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+													<div class="panel-heading">
+														<h3 class="panel-title" style="font-size:14px;"><b> Principal</b></h3>
+													</div>
+													<div class="panel-body">
+														<ul style="line-height:2em;">
+															<li class=""><a class="nav-link" href="https://prexamblr.vtu.ac.in/VTUPrexamJanuaryFeburary2023Fees/" style="text-decoration:none;font-size:16px;color:darkgreen;"><b>Fees Report&nbsp;&nbsp;<span class="label label-warning">New</span></b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- December 2022 / January 2023 Examination -->
+					</div>
+					<div class="row" style="background-color:#7aec7e57;padding:2px;">
+						<div class="col-md-6">
+							<p class="text-center" style="color:red;font-size: 16px;margin: 5px;font-weight:bold;">For better performance use Google Chrome web browser only...! </p>
+						</div>
+						<div class="col-md-6">
+							<p class="text-center" style="font-weight:bold;margin: 5px;">For Any Technical Query regard PREXAM <b style="color:blue;font-size:15px;letter-spacing:2px;">( 0831 - 2498130, 2498188 )</b></p>
+						</div>
+					</div>
+					<div class="row"> 
+						<div class="col-md-12" style="background:#2a2730;margin:0px;padding:10px;box-shadow:0px 0px 10px 0px #888888;">
+							<div class="row"> 
+								<div class="col-md-12" style="text-align:center;color:white;padding-left:20px;"> © 2023 Designed and Maintained by Project Management Cell <a href="https://vtu.ac.in/" target="_blank" style="color: #fcb316;"> VTU, Belagavi. Karnataka. India.</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>																																																																																																																																								

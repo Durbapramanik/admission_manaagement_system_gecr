@@ -1,0 +1,128 @@
+<html lang="en"><head>
+    <title>VTU Admission Portal</title>
+    <meta charset="utf-8">    
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" href="Assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <script src="static/assets/js/java/jquery.min.js" type="text/javascript"></script>
+    <script src="static/assets/js/java/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body style="background:#f0f0f0">
+    <div class="container" style="background:white">
+        <div class="row">
+            <div class="col-md-12" style="margin:0px;box-shadow:0px 0px 10px 0px #888888;">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <img src="static/images/VTULogo.png" width= "1200px" alt="VTU Logo" class="img-responsive">
+                        </div>
+                        <div class="row">
+                            <nav class="navbar navbar-inverse" style="border-radius:0px;margin-bottom:0px;">
+                                <h2 align="center" style="color: white">SEARCH STUDENT RECORDS </h2>
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-left">
+                                            <li class="nav-item">
+                                                <a href="/download" download="report.html"><button onclick="downloadReport()" type="button" style="color: black">DOWNLOAD REPORT</button></a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div> 
+                                </div> 
+                                    </nav>
+                                </div> 
+                                <div class="row" style="margin-bottom:1em;">
+                                    <div class="col-md-12" style="background-color:#EE833587;padding:4px;">
+                                        <marquee scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+                                            <span class="badge badge-success">!!!</span> <b style="color:#5a1fa9;">DATABASE MANAGEMENT SYSTEMS MINI PROJECT GOVERNMENT ENGINEERING COLLEGE RAMANAGARA</b>&nbsp;&nbsp;
+                                        </marquee>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+
+                        <br>
+<form action="/searchy" method="post">
+<div class="form-group">
+<label>Enter Your Semester</label>
+<input type="" class="form-control" name="sem" id="sem" placeholder="">
+</div>
+<br>
+  <button type="submit" class="btn btn-success">Search</button>
+</form>
+<br>
+
+
+                        <table class="table">
+                          <thead class="thead-light">
+                            <tr>
+                              <th scope="col">USN</th>
+                              <th scope="col">STUDENT NAME</th>
+                              <th scope="col">DOB</th>
+                              <th scope="col">SEM</th>
+                              <th scope="col">BRANCH</th>
+                              <th scope="col">EMAIL</th>
+                              <th scope="col">PHONE NUMBER</th>
+                              <th scope="col">SCHEME</th>
+                              <th scope="col">BATCH</th>
+                              <th scope="col"> </th>
+                              
+                             
+                          </thead>
+                          <tbody>
+                            {% for query in searc %}
+                            
+                              <th scope="row">{{query.usn}}</th>
+                              <td>{{query.Name}}</td>
+                              <td>{{query.date}}</td>
+                              
+                              <td>{{query.sem}}</td>
+                              <td>{{query.Branch}}</td>
+                              <td>{{query.Email}}</td>
+                              <td>{{query.Mobile}}</td>
+                              
+                              <td>{{query.scheme}}</td>
+                              <td>{{query.Batch}}</td>
+                              
+                        
+                            
+                            </tr>
+                            {% endfor %}
+    
+  
+  </tbody>
+</table>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadReport() {
+            // Get the content of the current page
+            var htmlContent = document.documentElement.outerHTML;
+    
+            // Create a Blob object from the HTML content
+            var blob = new Blob([htmlContent], { type: 'txt,html' });
+    
+            // Create a temporary anchor element
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+    
+            // Set the file name
+            a.download = 'report.html';
+    
+            // Append the anchor element to the document body
+            document.body.appendChild(a);
+    
+            // Trigger a click event on the anchor element
+            a.click();
+    
+            // Remove the anchor element from the document body
+            document.body.removeChild(a);
+        }
+    </script>
+    
+</body>
+</html>

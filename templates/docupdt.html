@@ -1,0 +1,370 @@
+<html><head>
+    <title>STUDENT TRACKING SYSTEM GECR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" value="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" value="notranslate">
+    <script src="static/assets/js/java/jquery.min.js" type="text/javascript"></script>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="static/assets/js/java/bootstrap.min.js"></script>
+    <script src="static/assets/js/java/jquery-1.11.1.min.js"></script>
+    <link href="templates/static/css/style.css" rel="stylesheet">
+    
+  
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="background-color: #e4e4e461;">
+                <div class="row" style="background-color:#3e3636;margin-bottom:10px;">
+                    <h3 style="text-align:center;color:#eee;margin-top:10px;margin-bottom:10px;">DOCUMENT VERIFICATION GECR</h3>
+                </div>
+            </div>
+<div class="row" style="padding-top: 20px;">
+<div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-login" style="padding: 25px 30px 25px 30px; background-color: #fff; border-radius:2px;box-shadow:0px 0px 20px gray;">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="btn btn-info btn-lg active" style="width:100%" style="align-items: center;" id="register-form-link">NEW ADMISSION</a>
+                </div>
+            
+            </div>
+        </div>
+        <style>
+            .blink_me {
+            animation: blinker 1s linear infinite;
+            color:#135b28;
+            font-weight: 500;
+            }
+            
+            @keyframes blinker {  
+            60% { opacity: 0; }
+            }
+        </style>	
+        <style>
+            .blink_me1 {
+            animation: blinker 3s linear infinite;
+            color:#135b28;
+            font-weight: 500;
+            }
+            
+            @keyframes blinker {  
+            60% { opacity: 0; }
+            }
+        </style>
+        
+        <div class="panel-body">
+            
+            <div class="row">
+                
+                        <div class="row" style="margin-bottom:15px">
+                            <form action="/addstudent" method="post">
+                                <div class="form-group">
+                                
+                                <label for="usn">USN</label>
+                                <input type="text" class="form-control" name="usn" id="usn">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                
+                                <label for="Name">Student Name</label>
+                                <input type="text" class="form-control" name="Name" id="Name">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                
+                                <label for="fname">Father Name</label>
+                                <input type="text" class="form-control" name="fname" id="fname">
+                                </div>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                
+                                  <label for="mname">Mother Name</label>
+                                  <input type="text" class="form-control" name="mname" id="mname">
+                                  </div>
+                                  <br>
+                                
+                                  <div class="form-group">
+                                    <label for="date">Date Of Birth</label>
+                                    <input type="date" class="form-control" name="date" id="date">
+                                    </div>
+                                    <br>
+                                
+                                <div class="form-group">
+                                
+                                <label for="sem">Sem</label>
+                                <input type="number" class="form-control" name="sem" id="sem">
+                                </div>
+                                <br>
+                                
+                                <div class="form-group">
+                                  <label for="scheme">Scheme</label>
+                                  <select  class="form-control" id="scheme" name="scheme"  required>
+                                    <option selected>Select</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option></select>
+                                  </div>
+                                  <br>
+                                
+                                <div class="form-group">     
+                                  <label for="gender">Gender</label>                     
+                                <select  class="form-control" id="gender" name="gender"  required>
+                                        <option selected>Select Gender</option>
+                                    
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+                                
+                                <div class="form-group">     
+                                  <label for="nationality">Nationality</label>                     
+                                <select  class="form-control" id="nationality" name="nationality"  required>
+                                        <option selected>Select </option>
+                                    
+                                        <option value="indian">Indian</option>
+                                        <option value="NRI">NRI</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+                                
+                                <div class="form-group">     
+                                  <label for="religion">Religion</label>                     
+                                <select  class="form-control" id="religion" name="religion"  required>
+                                        <option selected>Select</option>
+                                        <option value="hindu">Hindu</option>
+                                        <option value="muslim">Muslim</option>
+                                        <option value="christian">Christian</option>
+                                        <option value="other">Other</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+
+                                <div class="form-group">     
+                                  <label for="programme">Programme</label>                     
+                                <select  class="form-control" id="programme" name="programme"  required>
+                                        <option selected>Select</option>
+                                        <option value="UG">UG</option>
+                                        <option value="PG">PG</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+                                <div class="form-group">     
+                                  <label for="type">Admission Type</label>                     
+                                <select  class="form-control" id="type" name="type"  required>
+                                        <option selected>Select</option>
+                                        <option value="regular">Regular</option>
+                                        <option value="lateral">Lateral</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+
+                                <div class="form-group">     
+                                  <label for="Course">Course</label>                     
+                                <select  class="form-control" id="Course" name="Course"  required>
+                                        <option selected>Select</option>
+                                        <option value="BE">Bachelor of Engineering</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+
+                                <div class="form-group">     
+                                  <label for="Batch">Batch</label>                     
+                                <select  class="form-control" id="Batch" name="Batch"  required>
+                                        <option selected>Select</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                       
+                                      </select>
+                                 </div>
+                                <br>
+
+                                <div class="form-group">
+                                  <label for="admission">Date Of Admission</label>
+                                  <input type="date" class="form-control" name="admission" id="admission">
+                                  </div>
+                                  <br>
+                                
+                                
+                                  <div class="form-group">     
+                                    <label for="Branch">Branch</label>                     
+                                  <select  class="form-control" id="Branch" name="Branch" required>
+                                          <option selected>Select</option>
+                                          <option value="CSE">CSE</option>
+                                           <option value="CV">CV</option>
+                                            <option value="ECE">ECE</option>
+                                            <option value="MSM">MSM</option>
+                                         
+                                        </select>
+                                   </div>
+                                  <br>
+                                <div class="form-group">     
+                                <label for="Email">Email</label>
+                                <textarea class="form-control" name="Email" id="Email"></textarea>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                <label for="Mobile">Phone Number</label>
+                                <input type="number" class="form-control" name="Mobile" id="Mobile">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                  <label for="paddress">Permanent Address</label>
+                                  <textarea class="form-control" name="paddress" id="paddress"></textarea>
+                                  </div>
+                                  <br>
+                                
+                                  <div class="form-group">
+                                    <label for="address">Present Address</label>
+                                    <textarea class="form-control" name="address" id="address"></textarea>
+                                    </div>
+                                    <br>
+
+                                    <div class="form-group">
+                                      <label for="rank">KCET/DCET rank</label>
+                                      <input type="number" class="form-control" name="rank" id="rank">
+                                      </div>
+                                      <br>
+
+                                      <div class="form-group">
+                                        <label for="regno">KCET/DCET Registration Number</label>
+                                        <input type="" class="form-control" name="regno" id="regno">
+                                        </div>
+                                        <br>
+                                
+                                  <div class="form-group">
+                                    <label for="voter">Voter ID number</label>
+                                    <textarea class="form-control" name="voter" id="voter"></textarea>
+                                    </div>
+                                    <br>
+                                
+                                    <div class="form-group">
+                                      <label for="cat">Category</label>
+                                      <textarea class="form-control" name="cat" id="cat"></textarea>
+                                      </div>
+                                      <br>
+
+                                      <div class="form-group">
+                                        <label for="category">Category Claimed</label>
+                                        <textarea class="form-control" name="category" id="category"></textarea>
+                                        </div>
+                                        <br>
+
+                                        <div class="form-group">
+                                          <label for="categorya">Category Allotted</label>
+                                          <textarea class="form-control" name="categorya" id="categorya"></textarea>
+                                          </div>
+                                          <br>
+                                      <div class="form-group">
+                                        <label for="subcaste">SubCaste</label>
+                                        <textarea class="form-control" name="subcaste" id="subcaste"></textarea>
+                                        </div>
+                                        <br>
+                                
+                                        <div class="form-group">
+                                          <label for="caste">Caste Certificate RD Number</label>
+                                          <textarea class="form-control" name="caste" id="caste"></textarea>
+                                          </div>
+                                          <br>
+                                
+                                            <div class="form-group">
+                                              <label for="income">Income</label>
+                                              <input type="number" class="form-control" name="income" id="income">
+                                              </div>
+                                              <br>
+                                      
+                                              <div class="form-group">
+                                                <label for="incomecertif">Income Certificate RD Number</label>
+                                                <textarea class="form-control" name="incomecertif" id="incomecertif"></textarea>
+                                                </div>
+                                                <br>
+                                          
+                                          <div class="form-group">
+                                                  <label for="aadhar">Aadhar Number</label>
+                                                  <input type="number" class="form-control" name="aadhar" id="aadhar">
+                                                  </div>
+                                                  <br>
+                                                <div class="form-group">
+                                                    <label for="blood">Blood Group</label>
+                                                    <textarea class="form-control" name="blood" id="blood"></textarea>
+                                                    </div>
+                                                    <br>
+                                
+                                                    <div class="form-group">
+                                                      <label for="parentsmobile">Parent's Phone Number</label>
+                                                      <input type="number" class="form-control" name="parentsmobile" id="parentsmobile">
+                                                      </div>
+                                                      <br>
+
+                                                      <label for="fees">Fees Paid</label>
+                                                      <input type="number" class="form-control" name="fees" id="fees">
+                                                      </div>
+                                                      <br>
+                                                      
+                                                      <div class="form-group">
+                                                      <label for="marks">% of 10th/SSLC Boards</label>
+                                                      <input type="number" class="form-control" name="marks" id="marks">
+                                                      </div>
+                                                      <br>
+                                                      <div class="form-group">
+                                                        <label for="num">% of 12th/PUC Boards</label>
+                                                        <input type="number" class="form-control" name="num" id="num">
+                                                        </div>
+                                                        <br>
+                                                        <div class="form-group">     
+                                                          <label for="school">Area of Education</label>                     
+                                                        <select  class="form-control" id="school" name="school"  required>
+                                                                <option selected>Select</option>
+                                                                <option value="urban">Urban</option>
+                                                                <option value="rural">Rural</option>
+                                                               
+                                                              </select>
+                                                         </div>
+                                                        <br>
+                                                        
+
+                                  <button type="submit" class="btn btn-success" style="width:110px" >Add Record</button>
+                                </form>
+                                <br>
+                                <br>
+                                
+                                </div>
+                                
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+    
+        <div class="row">
+            <div class="col-md-12" style="text-align:center;color: white;background-color: #3e3636;padding:10px">© 2024 Designed &amp; Developed by <b>Students of GECR</b>, VTU, Belagavi. Karnataka. India.
+            </div>
+        </div>
+    
+</div>	
+</div>
+</div>
+</div>
+<script src="static/assets/js/java/style.js"></script>
+
+</div></body></html>
