@@ -16,7 +16,7 @@ applicants, administrative staff, and faculty members.
 Robust security measures are implemented to safeguard sensitive information, adhering to 
 data protection standards. 
 Moreover, AMS incorporates reporting functionalities to generate insightful analytics, 
-aiding administrators in decision-making and resource allocation. The integration of userfriendly interfaces ensures accessibility for all stakeholders, contributing to an overall usercentric experience. 
+aiding administrators in decision-making and resource allocation. The integration of user friendly interfaces ensures accessibility for all stakeholders, contributing to an overall user centric experience. 
 The system seeks to enhance the efficiency, transparency, and reliability of the admission 
 process, ultimately providing a seamless experience for both applicants and administrative 
 staff. 
